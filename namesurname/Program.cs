@@ -9,13 +9,17 @@ namespace namesurname
         {
 
             Console.WriteLine("enter a year ");
-            int year = Console.Read();
+            int year = int.Parse(Console.ReadLine());
 
 
             if (year % 4 == 0)
             {
                 if (year % 100 == 0)
                 {
+                    if (year % 400 == 0)
+                    {
+                        Console.WriteLine("it is a leap year");
+                    }
                     Console.WriteLine("it is a leap year");
                 }
                 else
@@ -33,6 +37,7 @@ namespace namesurname
 
 
         }
+
     }
 
 }
